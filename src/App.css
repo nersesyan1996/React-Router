@@ -1,30 +1,45 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.divforimg{
+  width: 20%;
   display: flex;
-  flex-direction: column;
+ align-items: center;
+}
+.App-logo{
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+}
+.menueParent{
+  width: 100%;
+  display: flex;
   align-items: center;
+  flex-direction: column;
+}
+.forHomepage{
+  width: 80%;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.App-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #282c34;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
+} 
 
-.App-link {
+ .App-link {
   color: #61dafb;
 }
 
@@ -36,3 +51,131 @@
     transform: rotate(360deg);
   }
 }
+* {box-sizing: border-box;}
+
+.topnav {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  background-color: #58bedb;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #2196F3;
+  color: black;
+}
+
+.topnav .search-container {
+  float: right;
+  padding-right: 10px;
+  
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+} 
+
+/* =========================================================== */
+/* main{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.inform{
+  width: 13%;
+  height: 400px;
+  border: 1px solid black;
+
+}
+.sec{
+   width: 87%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section{
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px;
+
+}
+
+
+.section1{
+   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.forimg{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 0 auto;
+
+}
+
+.forimg>img{
+  width: 160px;
+  background-size: contain;
+
+}
+.ecsda{
+    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+} */
+/* =========================================================== */
