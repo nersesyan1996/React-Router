@@ -22,4 +22,4 @@ import axios from 'axios'
   </>
   )
 }
-// export default Post;
+// ex
